@@ -9,3 +9,4 @@ The "processshot" function extracts automatically some useful values (etalon thi
 When running the notebooks, a new folder VISAR_Images/ will be automatically created. For each run, the two VISAR images will be saved in the folder folder VISAR_Images/runXXX.
 To use the notebook, change the "experimentID" variable to the ID corresponding to your experiment at HED and the "runnumber" variable with the run number you would like to extract. 
 
+NOTE: There are calibration files for each of VISAR window. In practice, the calibration file for the 20 ns window can be used for the 50 ns and 10 ns VISAR windows as well. The calibration file for the 20 ns window also corrects for the X-ray fiducial on VISAR 2. 
