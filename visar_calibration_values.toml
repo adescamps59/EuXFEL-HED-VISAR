@@ -1,0 +1,62 @@
+[global]
+dirTransformationMaps = './DewarpingCalibrationFiles/'
+
+
+[KEPLER1]
+dx = 0.5                                      # µm/pixel -- obtained from spatial calibration for a given FoV
+pixDipole_0ns.20ns = 2086.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455
+pixDipole_0ns.10ns = 2086.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
+pixDipole_0ns.50ns = 2091.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 50 ns sweep window -- r67 -- p900455
+pixXray = 2096.0                              # Xray pixel position at 0 ns delay, 0 ns sweep delay -- r32 -- p6746
+timeAxisPolynomial.20ns = [0.00580]                      # Sweep time -- r57-58-59 
+timeAxisPolynomial.10ns = [0.00282]                      # Sweep time -- r67-68-69
+timeAxisPolynomial.50ns = [0.01466]                      # Sweep time -- r62-63-64
+positionTrigger_ref.20ns = 58911981.04769231  # run['HED_EXP_VISAR/TSYS/ARM_1_TRIG', 'actualPosition'].ndarray() -- r60 -- p900455
+positionTrigger_ref.10ns = 58911981.04769231    # run['HED_EXP_VISAR/TSYS/ARM_1_TRIG', 'actualPosition'].ndarray() -- r65 -- p900455
+positionTrigger_ref.50ns = 58911893.903461546  # run['HED_EXP_VISAR/TSYS/ARM_1_TRIG', 'actualPosition'].ndarray() -- r67 -- p900455
+transformationMaps.10ns = 'VISAR_KEPLER1_10nsWindow_900499_run78_polynomial_16042025.cal'
+transformationMaps.20ns = 'VISAR_KEPLER1_20nsWindow_900499_run75_polynomial_16042025.cal'
+transformationMaps.50ns = 'VISAR_KEPLER1_20nsWindow_p2740_run639_evt1_polynomial.cal'
+
+[KEPLER2]
+dx = 0.4                                      # µm/pixel -- obtained from spatial calibration for a given FoV
+pixDipole_0ns.20ns = 2116.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455
+pixDipole_0ns.10ns = 2116.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
+pixDipole_0ns.50ns = 2090.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r67 -- p900455
+pixXray = 2096.0                              # Xray pixel position at 0 ns delay, 0 ns sweep delay -- r32 -- p6746
+timeAxisPolynomial.20ns = [0.00551]                      # Sweep time -- r57-58-59
+timeAxisPolynomial.10ns = [0.00265]                      # Sweep time -- r67-68-69
+timeAxisPolynomial.50ns = [0.01456]                      # Sweep time -- r62-63-64
+positionTrigger_ref.20ns = 58911982.55384615  # run['HED_EXP_VISAR/TSYS/ARM_2_TRIG', 'actualPosition'].ndarray() -- r60 -- p900455
+positionTrigger_ref.10ns = 58911982.55384615  # run['HED_EXP_VISAR/TSYS/ARM_2_TRIG', 'actualPosition'].ndarray() -- r65 -- p900455
+positionTrigger_ref.50ns = 58911884.997692294  # run['HED_EXP_VISAR/TSYS/ARM_2_TRIG', 'actualPosition'].ndarray() -- r67 -- p900455
+transformationMaps.10ns = 'VISAR_KEPLER2_10nsWindow_900499_run78_polynomial_16042025.cal'
+transformationMaps.20ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomial_AdditionalPointForXrayFiducial.cal'
+transformationMaps.50ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomial_AdditionalPointForXrayFiducial.cal'
+
+[VISAR_1w]
+dx = 1.2                                     # µm/pixel -- obtained from spatial calibration for a given FoV
+pixDipole_0ns.10ns = 670.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
+pixDipole_0ns.20ns = 670.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455 -- images at binned 2x2 so on the saved image it is pixel 335
+pixDipole_0ns.50ns = 684.0                   # FAKE VALUES FOR DEBUGGIN -- Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r62
+pixXray = 675.0                              # Xray pixel position at 0 ns delay, 0 ns sweep delay -- r33 -- p6746
+positionTrigger_ref.10ns = 58911989.81346153  # run['HED_EXP_VISAR/TSYS/ARM_3_TRIG', 'actualPosition.value'].ndarray() -- r65 -- p900455
+positionTrigger_ref.20ns = 58911989.81346153  # run['HED_EXP_VISAR/TSYS/ARM_3_TRIG', 'actualPosition.value'].ndarray() -- r60 -- p900455
+positionTrigger_ref.50ns = 58911903.11115384  # run['HED_EXP_VISAR/TSYS/ARM_3_TRIG', 'actualPosition.value'].ndarray() -- r67 -- p900455 
+
+timeAxisPolynomial.10ns = [8.06e-03, -1.02e-06, 3.32e-10] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 73 -- p900455
+timeAxisPolynomial.20ns = [1.42e-2, -5.21e-8, 3.37e-10] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 71 -- p900455
+timeAxisPolynomial.50ns = [3.94e-2, -2.01e-6, 8.88e-10] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 1224 -- p2740
+
+[SOP]
+dx = 0.4                                     # µm/pixel
+pixDipole_0ns.20ns = 672.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455
+pixDipole_0ns.10ns = 680.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
+pixDipole_0ns.50ns = 688.0                   # FAKE VALUES FOR DEBUGGIN -- Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r62
+pixXray = 217.0                              # Xray pixel position at 0 ns delay, 0 ns sweep delay -- r55-56 (very weak change -- might need to refine)
+positionTrigger_ref.20ns = 58911986.49615384  # run['HED_EXP_VISAR/TSYS/SOP_TRIG', 'actualPosition'].ndarray() -- r60 -- p9004555
+positionTrigger_ref.10ns = 58912005.99576923  # run['HED_EXP_VISAR/TSYS/SOP_TRIG', 'actualPosition'].ndarray() -- r65 -- p900455
+positionTrigger_ref.50ns = 58911886.99884615  # run['HED_EXP_VISAR/TSYS/SOP_TRIG', 'actualPosition'].ndarray() -- r67 -- p900455
+timeAxisPolynomial.20ns = [1.928e-2, 4.442e-7, 2.666e-10]
+timeAxisPolynomial.10ns = [1.058e-2, -1.162e-6, 0.463e-9]
+timeAxisPolynomial.50ns = [5.153e-2, -3.274e-6, 1.816e-9]
