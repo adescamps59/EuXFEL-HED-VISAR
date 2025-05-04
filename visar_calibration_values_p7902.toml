@@ -1,5 +1,5 @@
 [global]
-dirTransformationMaps = '/home/adescamp/EuXFEL-HED-VISAR-AnalysisRSI/VISAR_DewarpingCalibration/'
+dirTransformationMaps = './DewarpingCalibrationFiles/'
 
 
 [KEPLER1]
@@ -14,7 +14,6 @@ timeAxisPolynomial.50ns = [0.01466]                      # Sweep time -- r62-63-
 positionTrigger_ref.20ns = 58911981.04769231  # run['HED_EXP_VISAR/TSYS/ARM_1_TRIG', 'actualPosition'].ndarray() -- r60 -- p900455
 positionTrigger_ref.10ns = 58911981.04769231    # run['HED_EXP_VISAR/TSYS/ARM_1_TRIG', 'actualPosition'].ndarray() -- r65 -- p900455
 positionTrigger_ref.50ns = 58911893.903461546  # run['HED_EXP_VISAR/TSYS/ARM_1_TRIG', 'actualPosition'].ndarray() -- r67 -- p900455
-transformationMaps.5ns = 'VISAR_KEPLER1_20nsWindow_p2740_run639_evt1_polynomial.cal'
 transformationMaps.10ns = 'VISAR_KEPLER1_10nsWindow_900499_run78_polynomial_16042025.cal'
 transformationMaps.20ns = 'VISAR_KEPLER1_20nsWindow_900499_run75_polynomial_16042025.cal'
 transformationMaps.50ns = 'VISAR_KEPLER1_20nsWindow_p2740_run639_evt1_polynomial.cal'
@@ -31,7 +30,6 @@ timeAxisPolynomial.50ns = [0.01456]                      # Sweep time -- r62-63-
 positionTrigger_ref.20ns = 58911982.55384615  # run['HED_EXP_VISAR/TSYS/ARM_2_TRIG', 'actualPosition'].ndarray() -- r60 -- p900455
 positionTrigger_ref.10ns = 58911982.55384615  # run['HED_EXP_VISAR/TSYS/ARM_2_TRIG', 'actualPosition'].ndarray() -- r65 -- p900455
 positionTrigger_ref.50ns = 58911884.997692294  # run['HED_EXP_VISAR/TSYS/ARM_2_TRIG', 'actualPosition'].ndarray() -- r67 -- p900455
-transformationMaps.5ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomial_AdditionalPointForXrayFiducial.cal'
 transformationMaps.10ns = 'VISAR_KEPLER2_10nsWindow_900499_run78_polynomial_16042025.cal'
 transformationMaps.20ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomial_AdditionalPointForXrayFiducial.cal'
 transformationMaps.50ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomial_AdditionalPointForXrayFiducial.cal'
