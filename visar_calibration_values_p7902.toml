@@ -36,19 +36,17 @@ transformationMaps.50ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomia
 
 [VISAR_1w]
 dx = 1.2                                     # µm/pixel
-pixDipole_0ns.20ns = 670.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455 -- images at binned 2x2 so on the saved image it is pixel 335
 pixDipole_0ns.10ns = 670.0                  # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
+pixDipole_0ns.20ns = 670.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455 -- images at binned 2x2 so on the saved image it is pixel 335
 pixDipole_0ns.50ns = 684.0                   # FAKE VALUES FOR DEBUGGIN -- Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r62
 pixXray = 675.0                              # Xray pixel position at 0 ns delay, 0 ns sweep delay -- r33 -- p6746
-positionTrigger_ref.20ns = 58911989.81346153  # run['HED_EXP_VISAR/TSYS/ARM_3_TRIG', 'actualPosition.value'].ndarray() -- r60 -- p900455
 positionTrigger_ref.10ns = 58911989.81346153  # run['HED_EXP_VISAR/TSYS/ARM_3_TRIG', 'actualPosition.value'].ndarray() -- r65 -- p900455
+positionTrigger_ref.20ns = 58911989.81346153  # run['HED_EXP_VISAR/TSYS/ARM_3_TRIG', 'actualPosition.value'].ndarray() -- r60 -- p900455
 positionTrigger_ref.50ns = 58911903.11115384  # run['HED_EXP_VISAR/TSYS/ARM_3_TRIG', 'actualPosition.value'].ndarray() -- r67 -- p900455 
-# timeAxisPolynomial.20ns = [1.928e-2, 4.442e-7, 2.666e-10]
-timeAxisPolynomial.20ns = [1.43863375e-2, -1.60955536e-7, 4.07123365e-10] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 71 -- p900455
-# timeAxisPolynomial.10ns = [1.058e-2, -1.162e-6, 0.463e-9]
-timeAxisPolynomial.10ns = [7.72729718e-03, -4.78862700e-07, 8.89824905e-11] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 73 -- p900455
-# timeAxisPolynomial.50ns = [5.153e-2, -3.274e-6, 1.816e-9]
-timeAxisPolynomial.50ns = [5.153e-2, -3.274e-6, 1.816e-9] ## Probably wrong polynomials
+
+timeAxisPolynomial.10ns = [8.06e-03, -1.02e-06, 3.32e-10] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 73 -- p900455
+timeAxisPolynomial.20ns = [1.42e-2, -5.21e-8, 3.37e-10] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 71 -- p900455
+timeAxisPolynomial.50ns = [3.94e-2, -2.01e-6, 8.88e-10] # New polynomial coefficients found by fitting spatio-temporal calibration -- run 1224 -- p2740
 
 [SOP]
 dx = 0.4                                     # µm/pixel
