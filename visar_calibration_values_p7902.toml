@@ -3,7 +3,7 @@ dirTransformationMaps = './DewarpingCalibrationFiles/'
 
 
 [KEPLER1]
-dx = 0.5                                      # µm/pixel
+dx = 0.5                                      # µm/pixel -- obtained from spatial calibration for a given FoV
 pixDipole_0ns.20ns = 2086.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455
 pixDipole_0ns.10ns = 2086.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
 pixDipole_0ns.50ns = 2091.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 50 ns sweep window -- r67 -- p900455
@@ -19,7 +19,7 @@ transformationMaps.20ns = 'VISAR_KEPLER1_20nsWindow_900499_run75_polynomial_1604
 transformationMaps.50ns = 'VISAR_KEPLER1_20nsWindow_p2740_run639_evt1_polynomial.cal'
 
 [KEPLER2]
-dx = 0.4                                      # µm/pixel
+dx = 0.4                                      # µm/pixel -- obtained from spatial calibration for a given FoV
 pixDipole_0ns.20ns = 2116.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455
 pixDipole_0ns.10ns = 2116.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
 pixDipole_0ns.50ns = 2090.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r67 -- p900455
@@ -35,8 +35,8 @@ transformationMaps.20ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomia
 transformationMaps.50ns = 'VISAR_KEPLER2_20nsWindow_p2740_run1222_evt1_polynomial_AdditionalPointForXrayFiducial.cal'
 
 [VISAR_1w]
-dx = 1.2                                     # µm/pixel
-pixDipole_0ns.10ns = 670.0                  # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
+dx = 1.2                                     # µm/pixel -- obtained from spatial calibration for a given FoV
+pixDipole_0ns.10ns = 670.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r65 -- p900455
 pixDipole_0ns.20ns = 670.0                   # Dipole pixel position at 0 ns delay, 0 ns sweep delay, 20 ns sweep window -- r60 -- p900455 -- images at binned 2x2 so on the saved image it is pixel 335
 pixDipole_0ns.50ns = 684.0                   # FAKE VALUES FOR DEBUGGIN -- Dipole pixel position at 0 ns delay, 0 ns sweep delay, 10 ns sweep window -- r62
 pixXray = 675.0                              # Xray pixel position at 0 ns delay, 0 ns sweep delay -- r33 -- p6746
