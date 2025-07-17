@@ -7,7 +7,7 @@ Please cite XX if you are using the VISAR system at the HED-HiBEF instrument at 
 "visar_V3.py" automatically pulls out useful information regarding the long pulse laser (DiPOLE-100X) and the VISAR system. It creates three folders in the root directory called "./VISAR_TIFF_pXXXX", "./VISAR_Summary_pXXXX", "./VISAR_HDF5_pXXXX" with XXXX the proposal number. When running "visar_V3.py", a folder "/r_YYYY" (with YYYY the run number) is created in "./VISAR_TIFF_pXXXX" and "./VISAR_Summary_pXXXX". In "./VISAR_TIFF_pXXXX/r_YYYY", the VISAR images corrected for the curvature for each of the streak cameras are saved. Both the 2048x2048 images and 4096x4096 images. In "./VISAR_Summary_pXXXX/r_YYYY", a .png image of the result of the curvature correction for each streak cameras are saved. The image includes a calibrated temporal and spatial axis. The timing of the X-ray pulse is shown with a vertical purple line. In "./VISAR_HDF5_pXXXX", the script will generate a .hdf5 file which gathers information regarding DiPOLE and all the streak cameras (time axis, spatial axis, etalon thicknesses, etalon sensitivities, correct images, ...). NOTE: the script assumes that the hdf5 does not already exist. If it does, the existing hdf5 file should be deleted first. 
 
 
-VISAR_Save.ipynb is a jupyter notebook to be run on the Maxwell cluster at the EuXFEL to correct for the curvature and save the VISAR images. It creates objects defined in "visar_V3.py" file.
+VISAR_Save.ipynb is a jupyter notebook to be run on the Maxwell cluster at the EuXFEL to correct for the curvature and save the VISAR images. It creates objects defined in "visar_V3.py" file
 
 The "Calibration" folder contains jupyter notebooks used to generate the temporal and spatial axis.
 
