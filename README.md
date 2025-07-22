@@ -1,6 +1,7 @@
 # EuXFEL-HED-VISAR
 
-Please cite XX if you are using the VISAR system at the HED-HiBEF instrument at the EuXFEL. 
+If you are using the VISAR system at the HED-HiBEF instrument at the EuXFEL, please cite https://doi.org/10.1063/5.0271027
+ 
 
 "visar_V3.py" contains a serie of classes used to extract and correct the curvature of the VISAR images. On a general level, the VISAR images corresponding to a laser shot are filtered using a PPU signal from the DiPOLE-100X laser defined in the class "DipolePPU". A "CalibrationData" class is defined to read the information in the "visar_calibration_values.toml" file. The ".toml" contains information about the calibration files to use for the curvature correction. These files are found in the folder "DewarpingCalibrationFiles". The ".toml" file also includes values used to construct the time axis and the spatial axis. NOTE: Here t = 0 ns is defined as the rising edge of the DiPOLE-100X laser pulse. The class "VISAR" extracts useful information for the data acquisition system (DAQ), corrects for the curvature of the images and plot the results with a spatial and temporal axis. The class "SOP" is similar to the "VISAR" class but targets the Streaked Optical Pyrometry system.
 
